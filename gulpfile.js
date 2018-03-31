@@ -13,16 +13,16 @@ gulp.task('vendor', function() {
       '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
     ])
-    .pipe(gulp.dest('./vendor/bootstrap'))
+    .pipe(gulp.dest('./vendor/bootstrap'));
 
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./vendor/jquery'))
+    .pipe(gulp.dest('./vendor/jquery'));
 
-})
+});
 
 // Default task
 gulp.task('default', ['build']);
@@ -51,10 +51,8 @@ gulp.task('clean-build', function () {
 // build task
 gulp.task('build', ['clean-build', 'vendor'], function() {
   gulp.src(['./vendor/**'])
-    .pipe(minify())
     .pipe(gulp.dest('./build/vendor'));
 
-  gulp.src(['./css', './js', './mail', './*.html'])
-    .pipe(minify())
-    .pipe(gulp.dest('./build'))
-})
+  gulp.src(['css/**/*', 'js/**/*', 'mail/**/*', '*.html'], {base:"."})
+    .pipe(gulp.dest('./build'));
+});
