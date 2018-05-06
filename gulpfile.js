@@ -53,6 +53,6 @@ gulp.task('build', ['clean-build', 'vendor'], function() {
   gulp.src(['./vendor/**'])
     .pipe(gulp.dest('./build/vendor'));
 
-  gulp.src(['css/**/*', 'js/**/*', 'mail/**/*', '*.html'], {base:"."})
+  gulp.src(['css/**/*', 'js/**/*', 'mail/**/*', '*.html', 'img/**/*'], {base:"."})
     .pipe(gulp.dest('./build'));
 });
