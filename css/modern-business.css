@@ -39,3 +39,21 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.td-service {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #6FB442;
+}
+
+.td-price {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #6FB442;
+}
+
+.td-descr {
+  /* color: #D13387; */
+  /* color: #6FB442; */
+  color: darkgray;
+}
