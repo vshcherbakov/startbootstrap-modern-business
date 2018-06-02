@@ -21,62 +21,28 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Vara Thai Massage</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              </div>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">Vara Thai Massage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+      
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -95,8 +61,8 @@
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('img/vara-thai-inside.png')">
             <div class="carousel-caption ">
-              <h3>Best Service</h3>
-              <p>Increase flexibility</p>
+              <h3>Therapeutic And Relaxation Massage</h3>
+              <p>From Aroma to Sports Massage, we have you covered</p>
 
               <!-- <p>Where Terapeutic Meets Relaxation</p> -->
             </div>
@@ -104,8 +70,8 @@
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('img/inside-2.jpg')">
             <div class="carousel-caption ">
-              <h3>Third Slide</h3>
-              <p>Increase flexibility.. Realign your body.. Release Tension..</p>
+              <h3>Restore Your Sense of Well-Being</h3>
+              <p>Increase flexibility, release muscle tension, recharge your body and mind</p>
             </div>
           </div>
         </div>
@@ -122,7 +88,7 @@
 
     <!-- Page Content -->
     <div class="container">
-        <h1 class="my-4"><a name="about">Welcome to Vara Thai</a></h1>
+        <h1 class="my-4" id="about">Welcome to Vara Thai</h1>
 
       <!-- Intro and Call -->
       <div class="row mb-4">
@@ -136,13 +102,104 @@
                 <img src="img/phone-symbol-1.svg" width="20" /> (925)-804-5623</a>
           </div>
         </div>
-        
-      <!-- Contact Info -->
-      <h2><a name="contact">Contact Info</a></h2>
+        <h2 id="services">Our Services</h2> 
+        <div class="row table-responsive">
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th >60 min</th>
+                  <th >90 min</th>
+                  <th >120 min</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td width="70%" class="td-service">Traditional Thai Massage</td>
+                    <td class="td-price">80</td>
+                    <td class="td-price">115</td>
+                    <td class="td-price">150</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td-descr">
+                      This treatment uses techniques drawn from <i>Nuad Thai</i>, which can be roughly translated
+                      as <i>Thai Yoga</i>. Thai massage focuses on specific pressure points and also employs some
+                      gentle stretching. The client wears loose clothing and no oil is applied. This treatment releases
+                      tension, increases vitality and flexibility and creates wholeness of the body, soul, and mind.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="70%" class="td-service">Combination Massage</td>
+                    <td class="td-price">80</td>
+                    <td class="td-price">115</td>
+                    <td class="td-price">150</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td-descr">Our signature treatment, a massage with scented aroma oils that combines 
+                      aromatherapy and traditional Thai massage. 
+                      This treatment will ease tension and relieve muscle pain on key areas.
+                      The aroma oils will induce relaxation and tha Thai stretching will encourage body flexibility
+                      with medium to firm pressure for ultimate personal therapy.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="70%" class="td-service">Thai Aromatherapy Massage</td>
+                    <td class="td-price">90</td>
+                    <td class="td-price">130</td>
+                    <td class="td-price">170</td>
+                    </tr>
+                  <tr>
+                    <td colspan="5" class="td-descr">
+                      Exotic and unique treatment, full-body oil massage focused on pure relaxation that incorporates
+                      light-to-medium pressure, long strokes, and kneading to reduce tension. We use a combination of
+                      aromatic oils aimed to relax or stimulate the senses. This treatment stimulates circulation, relieves
+                      stress and fatique, and lifts the mood.
+                    </td>
+                  </tr>
+                  <tr>
+                      <td width="70%" class="td-service">Thai Therapeutic Massage</td>
+                      <td class="td-price">90</td>
+                      <td class="td-price">130</td>
+                      <td class="td-price">170</td>
+                      </tr>
+                    <tr>
+                      <td colspan="5" class="td-descr">
+                        This treatment covers full body and is very theraupetic in value. We apply a special balm
+                        sourced in Thailand that aids relaxation of muscle tension. This massage uses slow strokes
+                        and direct pressure that follow or go against the grain of tight layer of deep muscle tissue.
+                        You will feel thremendously relaxed and rejuvenated after the treatment.
+                      </td>
+                    </tr>
+                  </tbody>
+          </table>
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th >30 min</th>
+                  <th >60 min</th>
+                  <th >90 min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="70%" class="td-service">Head, Neck and Shoulders Massage</td>
+                  <td class="td-price">50</td>
+                  <td class="td-price">90</td>
+                  <td class="td-price">130</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      
+      <hr>
+          
+      <h2 id="contact">Contact Info</h2>
+        <!-- Contact Info -->
       <div class="row">
           <!-- Map Column -->
           <div class="col-lg-8 mb-4">
-            <!-- Embedded Google Map -->
+              <!-- Embedded Google Map -->
             <iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=19 Front St. Danville, CA&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
@@ -170,113 +227,25 @@
           </div>
         </div>
         <!-- /.row -->
-      <h2><a name="services">Our Services</a></h2> 
-      <div class="row table-responsive">
-        <table class="table table-striped">
-            <thead>
-              <tr>
-                <th></th>
-                <th >60 min</th>
-                <th >90 min</th>
-                <th >120 min</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td width="70%" class="td-service">Traditional Thai Massage</td>
-                  <td class="td-price">80</td>
-                  <td class="td-price">115</td>
-                  <td class="td-price">150</td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="td-descr">
-                    This treatment uses techniques drawn from <i>Nuad Thai</i>, which can be roughly translated
-                    as <i>Thai Yoga</i>. Thai massage focuses on specific pressure points and also employs some
-                    gentle stretching. The client wears loose clothing and no oil is applied. This treatment releases
-                    tension, increases vitality and flexibility and creates wholeness of the body, soul, and mind.
-                  </td>
-                </tr>
-                <tr>
-                  <td width="70%" class="td-service">Combination Massage</td>
-                  <td class="td-price">80</td>
-                  <td class="td-price">115</td>
-                  <td class="td-price">150</td>
-                </tr>
-                <tr>
-                  <td colspan="5" class="td-descr">Our signature treatment, a massage with scented aroma oils that combines 
-                    aromatherapy and traditional Thai massage. 
-                    This treatment will ease tension and relieve muscle pain on key areas.
-                    The aroma oils will induce relaxation and tha Thai stretching will encourage body flexibility
-                    with medium to firm pressure for ultimate personal therapy.
-                  </td>
-                </tr>
-                <tr>
-                  <td width="70%" class="td-service">Thai Aromatherapy Massage</td>
-                  <td class="td-price">90</td>
-                  <td class="td-price">130</td>
-                  <td class="td-price">170</td>
-                  </tr>
-                <tr>
-                  <td colspan="5" class="td-descr">
-                    Exotic and unique treatment, full-body oil massage focused on pure relaxation that incorporates
-                    light-to-medium pressure, long strokes, and kneading to reduce tension. We use a combination of
-                    aromatic oils aimed to relax or stimulate the senses. This treatment stimulates circulation, relieves
-                    stress and fatique, and lifts the mood.
-                  </td>
-                </tr>
-                <tr>
-                    <td width="70%" class="td-service">Thai Therapeutic Massage</td>
-                    <td class="td-price">90</td>
-                    <td class="td-price">130</td>
-                    <td class="td-price">170</td>
-                    </tr>
-                  <tr>
-                    <td colspan="5" class="td-descr">
-                      This treatment covers full body and is very theraupetic in value. We apply a special balm
-                      sourced in Thailand that aids relaxation of muscle tension. This massage uses slow strokes
-                      and direct pressure that follow or go against the grain of tight layer of deep muscle tissue.
-                      You will feel thremendously relaxed and rejuvenated after the treatment.
-                    </td>
-                  </tr>
-                </tbody>
-        </table>
-        <table class="table table-striped">
-            <thead>
-              <tr>
-                <th></th>
-                <th >30 min</th>
-                <th >60 min</th>
-                <th >90 min</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td width="70%" class="td-service">Head, Neck and Shoulders Massage</td>
-                <td class="td-price">50</td>
-                <td class="td-price">90</td>
-                <td class="td-price">130</td>
-              </tr>
-            </tbody>
-          </table>
-
-      </div>
       <hr>
-
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Vara Thai Massage LLC, 2018</p>
       </div>
       <!-- /.container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    
   </body>
 
 </html>
