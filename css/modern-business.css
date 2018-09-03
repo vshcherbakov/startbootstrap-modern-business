@@ -73,3 +73,5 @@ and (orientation : portrait)
   /* color: #6FB442; */
   color: darkgray;
 }
+
+.top-buffer { margin-top:20px; }
