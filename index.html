@@ -24,6 +24,21 @@
 
       gtag('config', 'UA-114307089-1');
     </script>
+
+    <script>
+      /**
+      * Function that tracks a click on an outbound link in Analytics.
+      * This function takes a valid URL string as an argument, and uses that URL string
+      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+      * using 'navigator.sendBeacon' in browser that support it.
+      */
+      var trackOutboundLink = function(url) {
+        ga('send', 'event', 'outbound', 'click', url, {
+          'transport': 'beacon',
+          'hitCallback': function(){document.location = url;}
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -115,7 +130,7 @@
               <div class="row-mb-4 top-buffer">
                   <div class="col-md4">
                       <a href="https://app.acuityscheduling.com/schedule.php?owner=16564690" target="_blank" 
-                      class="btn btn-lg btn-secondary btn-block acuity-embed-button" 
+                      onclick="trackOutboundLink('https://app.acuityscheduling.com/schedule.php?owner=16564690'); return false;"class="btn btn-lg btn-secondary btn-block acuity-embed-button" 
                       >
                       Schedule Online</a>
                       <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/16564690.css" id="acuity-button-styles" />
