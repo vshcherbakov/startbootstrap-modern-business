@@ -5,8 +5,6 @@ var minify = require('gulp-minify');
 var cleanCSS = require('gulp-clean-css');
 var clean = require('gulp-clean');
 
-// Default task
-gulp.task('default', ['build']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -18,10 +16,10 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task
-gulp.task('dev', ['browserSync'], function() {
+gulp.task('dev',gulp.series('browserSync', function() {
   gulp.watch('./css/*.css', browserSync.reload);
   gulp.watch('./*.html', browserSync.reload);
-});
+}));
 
 // clean build
 gulp.task('clean-build', function () {
@@ -30,10 +28,13 @@ gulp.task('clean-build', function () {
 });
 
 // build task
-gulp.task('build', ['clean-build'], function() {
+gulp.task('build', gulp.series('clean-build', function() {
   gulp.src(['./vendor/**'])
     .pipe(gulp.dest('./build/vendor'));
 
   gulp.src(['css/**/*', 'js/**/*', 'mail/**/*', '*.html', 'img/**/*'], {base:"."})
     .pipe(gulp.dest('./build'));
-});
+}));
+
+// Default task
+gulp.task('default', gulp.series('build'));
